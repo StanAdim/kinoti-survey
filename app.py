@@ -9,7 +9,8 @@ from datetime import datetime
 
 
 app = Flask(__name__)
-app.config["SQLALCHEMY_DATABASE_URI"] = 'sqlite:///survey.db'
+#app.config["SQLALCHEMY_DATABASE_URI"] = 'sqlite:///survey.db'
+app.config["SQLALCHEMY_DATABASE_URI"] = 'postgresql://lzhiiyyspiplnn:a8303e196fb4722d8fd30cc69c66003dda56f07c7d703a7635fdc75ab79bdf7f@ec2-44-196-174-238.compute-1.amazonaws.com:5432/d65qjpprromt0a'
 db = SQLAlchemy(app)
 
 
