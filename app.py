@@ -10,7 +10,9 @@ from datetime import datetime
 
 app = Flask(__name__)
 #app.config["SQLALCHEMY_DATABASE_URI"] = 'sqlite:///survey.db'
-app.config["SQLALCHEMY_DATABASE_URI"] = 'postgresql://lzhiiyyspiplnn:a8303e196fb4722d8fd30cc69c66003dda56f07c7d703a7635fdc75ab79bdf7f@ec2-44-196-174-238.compute-1.amazonaws.com:5432/d65qjpprromt0a'
+#app.config["SQLALCHEMY_DATABASE_URI"] = 'postgresql://lzhiiyyspiplnn:a8303e196fb4722d8fd30cc69c66003dda56f07c7d703a7635fdc75ab79bdf7f@ec2-44-196-174-238.compute-1.amazonaws.com:5432/d65qjpprromt0a'
+app.config["SQLALCHEMY_DATABASE_URI"] = 'postgresql://kyqccsocmqxfyr:532f415bc7b3a73d8dc8cb1d41a3f515c095e9ff0df3e7c6a3e128f538c9b078@ec2-3-211-221-185.compute-1.amazonaws.com:5432/d2o29pbulj2uqa'
+
 db = SQLAlchemy(app)
 
 
